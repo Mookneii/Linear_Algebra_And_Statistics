@@ -1,0 +1,26 @@
+import numpy as np
+vector_row = np.array([1,2,3])
+A = np.arange(0,9).reshape(3,3)
+print(A)
+mat1 = np.matrix("1,2,3,4;4,5,6,7;7,8,9,10")
+print(mat1)
+mat2 = np.array([[1,2],[3,4],[4,6]])
+print(mat2)
+print(mat2.shape[0])
+print (mat1.size)
+col_new = np.matrix("1,1,1,1")
+print(col_new)
+mat3 = (np.insert(mat1, 0, col_new, axis=0))
+# mat3[2,2]=0
+mat3[2, :]
+print(mat3)
+mat4 = np.arange(1,21).reshape(5,4)
+print(mat4)
+mat5 = np.arange(10,30).reshape(5,4)
+mat4 = np.transpose(mat4)
+mat5 = np.transpose(mat5)
+print(np.add(mat4,mat5))
+I4 = np.eye(4)
+i5 = I4[:,1:3]
+print(I4)
+print(i5)
